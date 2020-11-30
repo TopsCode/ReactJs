@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var attitude = function(original, replacement, source) {
+      return function(source) {
+        return source.replace(original, replacement);
+    };
+    };
+
+    var snakify = attitude(/jay/ig, "Jay Amin");
+    var hippify = attitude(/simple/ig, "amazing");
+
+    console.log(snakify("I am Jay."));
+    // The Snake People are always up to something.
+    console.log(hippify("We are going to create simple app."));
+    // The Aging Hippies just look the other way.
+</script>
+</html>

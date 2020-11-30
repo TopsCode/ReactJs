@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // var START
+    var x = "hello world";
+
+    function hello() {
+        var x  = "hey there"; // redeclared
+        x = "hola!"; // reassigned
+        console.log(x); // OUTPUT: hola!
+    }
+    console.log(x); // OUTPUT: hello world
+    hello();
+    // var END
+
+    // let START
+    let colour = "red"; 
+
+    function hello() {
+        let colour = "blue"; //different variable
+        colour = "pink"; // can reassign
+        let colour = "orange"; // can't redeclare
+        console.log(colour);
+    }
+    console.log(colour); // OUTPUT: red
+    hello();
+    // let END
+
+    // const START
+    const x = 5;
+    x = 10; // error: Uncaught TypeError: Assignment to constant variable.
+
+    const y = ["a", "b", "c"];
+    y.push("d"); // array can be manipulated
+    console.log(y); // OUTPUT: ["a", "b", "c", "d"]
+    // const END
+
+    // var x; // OK
+    // let y; // OK
+    // const z; // NOT OK
+</script>
+</html>

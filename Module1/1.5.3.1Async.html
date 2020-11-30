@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    My Name will display in 3 seconds
+    <div id="demo"></div>
+</body>
+<script>
+    // setTimeout(myFunction, 3000);
+
+    // function myFunction() {
+    // document.getElementById("demo").innerHTML = "Jay Amin";
+    // }
+
+    // Instead of passing the name of a function as an argument to another function, you can always pass a whole function instead:
+    setTimeout(function() { myFunction("Jay Amin"); }, 3000);
+
+    function myFunction(value) {
+    document.getElementById("demo").innerHTML = value;
+    }
+</script>
+</html>

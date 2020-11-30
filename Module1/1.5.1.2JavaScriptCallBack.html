@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+</body>
+<script>
+    function myDisplayer(some) {
+        document.getElementById("demo").innerHTML = some;
+    }
+    function myFirst() {
+        myDisplayer("Hello");
+    }
+    function mySecond() {
+        myDisplayer("Goodbye");
+    }
+    // Change the sequence first call mySecond() than mySecond() vice versa
+    mySecond();
+    myFirst();
+
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="clicker">Click me</div>
+</body>
+<script>
+    var proveIt = function() {
+    alert("you triggered " + this.id);
+    };
+    document.getElementById("clicker").addEventListener("click", proveIt);
+    var snakify = function(text) {
+    return text.replace(/khan/ig, "Jay Amin");
+    };
+    console.log(snakify("My Name is Khan."));
+    // The Snake People are always up to something.
+</script>
+</html>
